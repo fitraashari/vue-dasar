@@ -1,7 +1,6 @@
 var app = new Vue({
     el: '#app',
     data: {
-      title: 'Anjay Mabar',
-      message: 'Hello Vue!'
+      message: '<b>Hello Vue!</b>'
     }
   })
