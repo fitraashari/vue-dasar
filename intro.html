@@ -10,7 +10,8 @@
         <!-- <h2>{{ title }}</h2> -->
         <p v-if="show == 'ready'">{{ message }}</p>
         <p v-else="show">{{ message2 }}</p>
-        <p>Result from {{int1}} + {{int2}} = {{sum}}</p>
+        <p>Result from {{int1}} + {{int2}} = {{result}}</p>
+        <button v-on:click="sumProcess(2)">Process</button>
       </div>
 <!-- development version, includes helpful console warnings -->
 <script src="asset/vendor/vue.js"></script>
