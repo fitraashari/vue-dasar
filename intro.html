@@ -12,6 +12,8 @@
         <p v-else="show">{{ message2 }}</p>
         <p>Result from {{int1}} + {{int2}} = {{result}}</p>
         <button v-on:click="sumProcess(2)">Process</button>
+        <input type="text" v-model="kilometers">
+        <input type="text" v-model="meters">
       </div>
 <!-- development version, includes helpful console warnings -->
 <script src="asset/vendor/vue.js"></script>
