@@ -1,8 +1,11 @@
 var app = new Vue({
     el: '#app',
     data: {
-      imgFile:'asset/img/eclipse.jpg',
-      link:'https://google.com',
-      styleFont: 'color: red; font-size: 20px;',
+      message:''
+    },
+    methods:{
+      showAlert: function(){
+        alert('Button Di Klik dengan alert')
+      }
     }
   })
