@@ -1,10 +1,8 @@
 var app = new Vue({
     el: '#app',
     data: {
-      message: '',
-      textarea:'',
-      radiobutton:'',
-      checkbox:[],
-      select:[],
+      imgFile:'asset/img/eclipse.jpg',
+      link:'https://google.com',
+      styleFont: 'color: red; font-size: 20px;',
     }
   })

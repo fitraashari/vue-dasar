@@ -7,45 +7,11 @@
 </head>
 <body>
     <div id="app">
-        <input type="text" v-model="message">
+        <img v-bind:src="imgFile" width="500" height="300">
         <br>
-        {{message}}
-        <textarea cols="30" rows="10" v-model="textarea"></textarea>
+        <a v-bind:href="link">About Page</a>
         <br>
-        <p style="white-space: pre-line;">{{textarea}}</p>
-        <input type="radio" v-model="radiobutton" value="option1">Option 1
-        <br>
-        <input type="radio" v-model="radiobutton" value="option2">Option 2
-        <br>
-        Your Choice is : {{radiobutton}}
-        <br>
-        <label for="">Wathcing Movies</label>
-        <input type="checkbox" value="watching-movies" v-model="checkbox">
-        <br>
-        <label for="">Traveling</label>
-        <input type="checkbox" value="traveling" v-model="checkbox">
-        <br>
-        <label for="">Reading</label>
-        <input type="checkbox" value="reading" v-model="checkbox">
-        <br>
-        My Hobbies Are {{checkbox}}
-        <ul>
-            <li v-for="choice in checkbox">{{choice}}</li>
-        </ul>
-        <br>
-        Choice your fav programming language
-        <select v-model="select" multiple>
-            <option value="" disabled>choice programming language</option>
-            <option value="javascript">Javascript</option>
-            <option value="java">Java</option>
-            <option value="php">PHP</option>
-        </select>
-        <br>
-        Your favorit programming language is: {{select}}
-        <br>
-        <ul>
-            <li v-for="lang in select">{{lang}}</li>
-        </ul>
+        <p v-bind:style="styleFont">Red Font</p>
     </div>
 <!-- development version, includes helpful console warnings -->
 <script src="asset/vendor/vue.js"></script>
