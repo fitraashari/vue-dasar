@@ -32,6 +32,20 @@
         <ul>
             <li v-for="choice in checkbox">{{choice}}</li>
         </ul>
+        <br>
+        Choice your fav programming language
+        <select v-model="select" multiple>
+            <option value="" disabled>choice programming language</option>
+            <option value="javascript">Javascript</option>
+            <option value="java">Java</option>
+            <option value="php">PHP</option>
+        </select>
+        <br>
+        Your favorit programming language is: {{select}}
+        <br>
+        <ul>
+            <li v-for="lang in select">{{lang}}</li>
+        </ul>
     </div>
 <!-- development version, includes helpful console warnings -->
 <script src="asset/vendor/vue.js"></script>
