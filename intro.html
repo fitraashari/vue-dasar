@@ -7,14 +7,9 @@
 </head>
 <body>
     <div id="app">
-        <!-- <h2>{{ title }}</h2> -->
-        <p v-if="show == 'ready'">{{ message }}</p>
-        <p v-else="show">{{ message2 }}</p>
-        <p>Result from {{int1}} + {{int2}} = {{result}}</p>
-        <button v-on:click="sumProcess(2)">Process</button>
-        <input type="text" v-model="kilometers">
-        <input type="text" v-model="meters">
-      </div>
+        <input type="text" v-model="message">
+        {{message}}
+    </div>
 <!-- development version, includes helpful console warnings -->
 <script src="asset/vendor/vue.js"></script>
 <script src="asset/js/app.js"></script>
