@@ -18,6 +18,20 @@
         <input type="radio" v-model="radiobutton" value="option2">Option 2
         <br>
         Your Choice is : {{radiobutton}}
+        <br>
+        <label for="">Wathcing Movies</label>
+        <input type="checkbox" value="watching-movies" v-model="checkbox">
+        <br>
+        <label for="">Traveling</label>
+        <input type="checkbox" value="traveling" v-model="checkbox">
+        <br>
+        <label for="">Reading</label>
+        <input type="checkbox" value="reading" v-model="checkbox">
+        <br>
+        My Hobbies Are {{checkbox}}
+        <ul>
+            <li v-for="choice in checkbox">{{choice}}</li>
+        </ul>
     </div>
 <!-- development version, includes helpful console warnings -->
 <script src="asset/vendor/vue.js"></script>
